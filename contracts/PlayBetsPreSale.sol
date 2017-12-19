@@ -5,6 +5,8 @@ import 'zeppelin-solidity/contracts/ownership/Ownable.sol';
 import 'zeppelin-solidity/contracts/math/SafeMath.sol';
 
 contract PlayBetsPreSale is Ownable {
+    string public constant name = "PlayBets Closed Pre-Sale";
+
     using SafeMath for uint256;
 
     PlayBetsToken public token;
