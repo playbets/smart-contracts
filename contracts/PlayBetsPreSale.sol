@@ -36,7 +36,7 @@ contract PlayBetsPreSale is Ownable {
         _;
     }
 
-    function LordCoinPreICO (
+    function PlayBetsPreSale (
         address _tokenAddr,
         address _beneficiary,
 
