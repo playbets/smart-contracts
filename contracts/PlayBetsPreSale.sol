@@ -102,7 +102,9 @@ contract PlayBetsPreSale is Ownable {
           msg.sender.transfer(msg.value.sub(_wei));
         }
 
-        if (token.balanceOf(msg.sender) == 0) investorCount++;
+        if (token.balanceOf(msg.sender) == 0) {
+            investorCount++;
+        }
         token.transfer(msg.sender, tokenCount);
 
         weiRaised = weiRaised.add(_wei);
